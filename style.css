@@ -1,0 +1,103 @@
+/* img {
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  body {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #f9f9fd;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  .box {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  
+    animation-name: changeBgColor;
+    animation-duration: 3000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+  
+  /* Pause animation on hover */
+  /* .box:hover {
+    animation-play-state: paused;
+  }
+  
+  @keyframes changeBgColor {
+    0% {
+      background-color: deeppink;
+    }
+  
+    50% {
+      background-color: orange;
+    }
+  
+    100% {
+      background-color: deepskyblue;
+    }
+  }
+   */
+
+   .content {
+    padding: 50px;
+  }
+  
+  .content-circle {
+    height: 100px;
+    width: 100px;
+    background-color: cornflowerblue;
+    position: relative;
+    left: 0;
+  
+    animation-name: white-circle;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  
+  @keyframes white-circle {
+  0% {
+    transform: translate(0, 0); /* Start position */
+    background: red;
+  }
+  25% {
+    transform: translate(200px, 0); /* Move right */
+    background: blue;
+  }
+  50% {
+    transform: translate(200px, 200px); /* Move down */
+    background: green;
+  }
+  75% {
+    transform: translate(0, 200px); /* Move left */
+    background: yellow;
+  }
+  100% {
+    transform: translate(0, 0); /* Move up, back to start */
+  }
+}
